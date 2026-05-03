@@ -1,3 +1,35 @@
 /* TODO (optional): Define styles for dark mode */
 
 /* TODO (optional): Ensure text and background colors adjust for dark mode */
+/* Base styles for the light mode container */
+.container {
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #222222;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* TODO: Define styles for dark mode */
+.darkMode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Adjusting specific elements for dark mode */
+.darkMode button {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+.darkMode select {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Ensure the product cards stand out in dark mode */
+.darkMode .productCard {
+  border: 1px solid #444444;
+  background-color: #1e1e1e;
+}

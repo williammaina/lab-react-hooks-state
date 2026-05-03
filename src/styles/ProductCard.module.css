@@ -3,3 +3,58 @@
 /* TODO (optional): Add special styling for out-of-stock products */
 
 /* TODO (optional): Style the add/remove button */
+/* TODO: Style the product card container */
+/* TODO: Style the product card container */
+.productCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  max-width: 250px;
+}
+
+.productCard:hover {
+  transform: translateY(-4px);
+}
+
+/* TODO: Add special styling for out-of-stock products */
+.outOfStock {
+  opacity: 0.6;
+  filter: grayscale(1);
+  background-color: #f9f9f9;
+  cursor: not-allowed;
+  border-style: dashed;
+}
+
+.outOfStockText {
+  color: #d9534f;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* TODO: Style the add/remove button */
+.actionButton {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.actionButton:hover {
+  background-color: #218838;
+}
+
+.actionButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
