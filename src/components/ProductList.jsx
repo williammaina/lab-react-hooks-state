@@ -4,7 +4,10 @@ import ProductCard from './ProductCard'
 // Sample product data (for display purposes only)
  const sampleProducts = [
   { id: 1, name: 'Apple', price: '$1.00', category: 'Fruits', inStock: true },
-  { id: 2, name: 'Milk', price: '$2.50', category: 'Dairy', inStock: false }
+  { id: 2, name: 'Milk', price: '$2.50', category: 'Dairy', inStock: false },
+   { id: 3, name: 'wangari', price: '$1.00', category: 'Fruits', inStock: true },
+  { id: 4, name: 'Crips', price: '$2.50', category: 'Dairy', inStock: false },
+
 ]
 
 const ProductList = ({ selectedCategory, onAddToCart }) => {
@@ -19,7 +22,7 @@ const ProductList = ({ selectedCategory, onAddToCart }) => {
           <ProductCard 
             key={product.id} 
             product={product} 
-            onAddToCart={onAddToCart} 
+            addToCart={onAddToCart} 
           />
         ))}
     </div>

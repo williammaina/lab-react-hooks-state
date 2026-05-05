@@ -1,8 +1,15 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Ensure the page takes up the full browser window */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: block; /* Remove flex/grid from the root if it was there */
+}
+
+body {
+  background-color: #f4f4f4; /* Set a default light background */
+  font-family: sans-serif;
 }
 
 .logo {
@@ -39,4 +46,21 @@
 
 .read-the-docs {
   color: #888;
+}
+/* This targets the container holding your cards */
+main, .App {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  align-items: center;    /* Center them horizontally */
+  width: 100vw;           /* Take up 100% of the Viewport Width */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* If you want multiple cards side-by-side filling the screen, use this instead: */
+.project-list-container { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px;
+  width: 100%;
 }
